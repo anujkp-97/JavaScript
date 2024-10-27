@@ -19,7 +19,7 @@ Object literal
 
 ## 4 Pillars
 
--Abstraction :- hiding the internal details
--Encapsulation:- wrap the data into the single unit
--Inheritance:- 
--Polymorphism:- many forms
+- Abstraction :- hiding the internal details
+- Encapsulation:- wrap the data into the single unit
+- Inheritance:- 
+- Polymorphism:- many forms
