@@ -1,9 +1,11 @@
 /*
     What we will learn 
 
-    1. What is DOM?
+    1. What is DOM? -- DOM is an API for manipulating the HTML documents. DOM provides function that allow to 
+                        add, remove, and modify parts of document effectively.
+                        DOM represent HTML document as a tree node.
 
-    2. What is nodes and types of node.
+    2. What is nodes and types of node. -- tags of HTML
 
     3. Selection element using DOM
         
