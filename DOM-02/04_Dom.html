@@ -8,18 +8,31 @@
 <body>
         <!-- attribute-methods -->
 
-        <input type="text" id="username" placeholder="username">
+        <input type="text" id="username" placeholder="username"
+            style="background-color: red; font-size:20px;">
 
         <script>
                 let inputBox = document.getElementById('username')
 
+
+                console.log(inputBox.style.backgroundColor);
+                console.log(inputBox.style.fontSize);
+                
+                inputBox.style.padding = "20px"
+
+                console.log(inputBox.style.padding);
+
+                
+                
+                
+
                 // console.log(inputBox.attributes);
                 // console.log(inputBox.getAttribute('placeholder'));
 
-                inputBox.setAttribute('class', 'newUser')
-                console.log(inputBox);
+                // inputBox.setAttribute('class', 'newUser')
+                // console.log(inputBox);
 
-                console.log(inputBox.hasAttribute('class'));
+                // console.log(inputBox.hasAttribute('class'));
                 
 
 
