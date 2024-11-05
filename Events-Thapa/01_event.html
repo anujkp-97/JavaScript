@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Thapa</title>
+
+    <style>
+        
+    </style>
+
+
+</head>
+<body style="background-color: lightgreen">
+            <h1>Inline Event</h1>
+            <button onclick="alert('Welcome')"> Greeting</button>
+            <button ondblclick="alert('Welcome dobule click')"> Greeting Again</button>
+            <button onmouseover="alert('Welcome again')"> Greeting second</button>
+
+            <h1>DOM Event Handler</h1>
+
+            <button id="mybtn">greeting</button>
+            <button id="mybtn1">greeting again</button>
+
+
+            <h1>Add Event Listener</h1>
+
+            <button id="btn">greeting</button>
+            <button id="btn1">greeting again</button>
+
+
+
+
+
+    <script>
+
+        // Using DOM -------------------------------------------------------------------------------
+            document.getElementById("mybtn").onclick = () => alert('Welcome');
+            
+
+            // document.getElementById("mybtn").onclick =  function () 
+            // {
+            //     alert('Welcome again')
+
+            // };
+
+            document.getElementById("mybtn1").onmouseover = function () {
+                alert('Welcom mouseOver')
+            }
+
+            // document.getElementById("mybtn1").onmouseover = () => alert('Welcome mouse-Over')
+
+         // Using DOM -------------------------------------------------------------------------------
+
+
+            document.getElementById('btn').addEventListener('click', function(){
+                alert('Welcome Event Btn')
+            })
+
+
+            document.getElementById('btn1').addEventListener('mouseover', function(){
+                alert('Welcome Event Btn2')
+            })
+
+            
+
+
+    </script>
+
+
+</body>
+</html>

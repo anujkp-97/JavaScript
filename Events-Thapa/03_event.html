@@ -1,0 +1,67 @@
+<!-- this is the keyboard event -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+
+    <style>
+        body{
+            justify-content: center;
+            margin-top: 10rem;
+            background-color:black;
+        }
+
+        .keyPressed, 
+        .keyCode,
+        .charCode,
+        .eventType{
+            color: #f5ee62;
+        }
+        .rectangle{
+            border: 2px white solid;
+            margin: 40px;
+            height: 15rem;
+            width: 30rem;
+            padding: 20px;
+            
+        }
+        #myInput,
+        #button
+        {
+            height: 20px;
+        }
+    </style>
+
+
+ </head>
+ <body>
+
+        <div class="rectangle">
+            <input type="text" id="myInput" placeholder="Type something....." />
+            <button id="button">Click me</button>
+            <div class="output">
+                <p class="keyPressed">Key Pressed:</p>
+                <p class="keyCode">Key Code:</p>
+                <p class="charCode">Char codeAt: </p>
+                <p class="eventType">Event Type: </p>
+            </div>
+        </div>
+
+
+        <script>
+
+                const handleKeyPress = (event) => {
+                    
+                };
+
+
+                var myInput = document.getElementById("myInput")
+
+                myInput.addEventListener('keydown', handleKeyPress)
+
+        </script>
+
+ </body>
+ </html>
