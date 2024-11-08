@@ -53,13 +53,36 @@
         <script>
 
                 const handleKeyPress = (event) => {
-                    
+                        console.log(event)
+                        console.log("key pressed: ", event.key);
+                        console.log("key code: ", event.code);
+                        console.log("key type: ", event.type);
+
+                 document.querySelector(
+                    ".keyPressed"
+                ).textContent = `Key Pressed: ${event.key}`
+
+                 document.querySelector(
+                    ".keyCode"
+                ).textContent = `Key Pressed: ${event.code}`
+
+                 document.querySelector(
+                    ".charCode"
+                ).textContent = `Key Pressed: ${event.key.charCodeAt(0)}`
+
+                 document.querySelector(
+                    ".eventType"
+                ).textContent = `Key Pressed: ${event.type}`
+                        
                 };
+
+
+                
 
 
                 var myInput = document.getElementById("myInput")
 
-                myInput.addEventListener('keydown', handleKeyPress)
+                myInput.addEventListener('keyup', handleKeyPress)
 
         </script>
 
