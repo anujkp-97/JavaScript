@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +14,10 @@
     background-position: center;
     background-repeat: no-repeat;
 } */
+
+html, body{
+    font-family: "Poppins", sans-serif;
+}
 
 .background-video-container {
     position: relative;
@@ -41,8 +48,8 @@
 .content{
     border: 2px solid ;
     height: 400px;
-    max-width: 800px;
-    background: linear-gradient(to right, #425ff1, #98c9ff);
+    max-width: 990px;
+    background: linear-gradient(to right, #fa9898, #a7cefa);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,3 +66,66 @@
    
 }
 
+.setting{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 25%;
+    background-color: white;
+    background: linear-gradient(to right, #fa9898, #a7cefa);
+
+}
+
+.setting .settings-content{
+    font-size: 3rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 12px;
+
+}
+
+.settings-content input{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.settings-content button{
+    padding: 0.7rem 1rem;
+    background-color: rgb(0, 187, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.settings-content button:hover{
+    cursor: pointer;
+    background-color: rgb(8, 117, 8);
+    transition: 0.3s ease;
+    transform: scale(1.1);  
+}
+
+.time-container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 6.5rem;
+   padding-top: 40px;
+}
+
+.time-container h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.time-container div{
+    font-size: 5rem;
+    color: rgb(25, 119, 25);
+}
+
+.hide{
+    display: none;
+}
