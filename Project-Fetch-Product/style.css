@@ -98,13 +98,14 @@ body{
     padding-left: 40px;
     height: 35px;
     border: 2px solid var(--primary);
-    color:  var(--primary);
+    color: black;
+    font-size: 15px;
 
 }
 
 .input_container input::placeholder{
     font-size: 1.2rem;
-    color:  var(--primary);
+    color:  black;
 }
 
 .search_icon{
@@ -113,6 +114,9 @@ body{
     margin-left: -35px;
     display: grid;
     place-items: center;
+}
+.search_icon img{
+    height: 25px;
 }
 
 @media (max-width: 630px){
